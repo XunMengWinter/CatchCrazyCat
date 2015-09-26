@@ -8,15 +8,15 @@ import android.view.MenuItem;
 
 public class MainActivity extends Activity {
 
-    public static int screenWidth = 0;
+//    public static int screenWidth = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        DisplayMetrics metrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        screenWidth = metrics.widthPixels;
-        //setContentView(R.layout.activity_main);
+        // 使用Playground类中提到的根据屏幕设置元素宽度的方法一
+//        DisplayMetrics metrics = new DisplayMetrics();
+//        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+//        screenWidth = metrics.widthPixels;
         setContentView(new Playground(this));
     }
 
